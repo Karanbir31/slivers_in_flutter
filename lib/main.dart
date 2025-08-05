@@ -117,6 +117,16 @@ class MyApp extends StatelessWidget {
               ),
             ),
 
+
+            SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                        (BuildContext context , int index){
+                          return Text("Sliver List item $index");
+                        },
+                      childCount: 10
+                    ),
+            ),
+
             SliverFillRemaining(),
           ],
         ),
